@@ -9,17 +9,18 @@
 }
 .main_container {
     flex-grow: 1;
-    background-image: url('/Assignment_1/Assets/2.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    
+  
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-left: 260px;
+    height: 100vh;    
 }
 
 .side-bar{
     background-color:#22180F;
     width: 260px;
     height: 100vh;
-
+    position: fixed;
 
 }
 .profile-pic{
@@ -53,13 +54,51 @@
     color: rgb(2, 2, 2);
 }
 .main_about{
-    width: 600px;
-    height: fit-content;
+    background-image: url('/Assignment_1/Assets/2.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.main_page_text{
+     width: 600px;
     margin-left:20px ;
     font-size: 20px;
     color: aliceblue;
-    margin-top: 40%;
+    padding-top: 40%;
+
 
     
+
+}
+section{
+    height: 100vh;
+
+}
+.About{
+    color: #22180F;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: xx-large;
+
+}
+.div_1_in_about_section
+{
+    object-fit: cover;
+    padding: 2px;
+    height: 400px;
+    width: 400px;
+  display: flex;
+  margin: 20px;
+
+    
+}
+   
+
+.div_2_in_about_section{
+ flex-grow:1;
+}
+.adout_container{
+    display: flex; 
+    align-items:center; 
 
 }
