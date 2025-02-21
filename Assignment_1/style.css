@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display:flex;
+    height: 100vh;
+
+}
+.main_container {
+    flex-grow: 1;
+    background-image: url('/Assignment_1/Assets/2.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.side-bar{
+    background-color:#22180F;
+    width: 260px;
+    height: 100vh;
+
+
+}
+.profile-pic{
+    border-radius: 50%;
+    border-width: 10px;
+    width: 200px;
+    height: 250px;
+    margin-left: 20px;
+    border: 5px solid #555; 
+}
+.name{
+    color: rgb(239, 235, 235);
+    margin-left: 20px;
+}
+.icons{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 4%;
+    margin-right: 20%;
+    gap: 10px;
+   
+   
+
+}
+.icons i{
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+ 
+}
+.icons :hover{
+    color: rgb(2, 2, 2);
+}
+.main_about{
+    width: 600px;
+    height: fit-content;
+    margin-left:20px ;
+    font-size: 20px;
+    color: aliceblue;
+    margin-top: 40%;
+
+    
+
+}
