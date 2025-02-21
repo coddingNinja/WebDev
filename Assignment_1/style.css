@@ -87,18 +87,34 @@ section{
     padding: 2px;
     height: 400px;
     width: 400px;
-  display: flex;
-  margin: 20px;
+    display: flex;
+    margin: 20px;
 
     
 }
    
 
 .div_2_in_about_section{
- flex-grow:1;
+    height: 400px;
+    width: 400px;
+    flex-grow: 1;
+    padding: 0px;
+
+
 }
 .adout_container{
     display: flex; 
     align-items:center; 
 
+}
+.list_about{
+    font-size: large;
+    margin: 20px;
+}
+ul li ::before{
+    
+    content: ">";
+}
+ul{
+    list-style: none;
 }
