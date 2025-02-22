@@ -58,7 +58,10 @@
 }
 
 .icons :hover {
-    color: rgb(2, 2, 2);
+    color: black;
+    font-weight: bold;
+    font-size: xxx-large;
+    
 }
 
 .main_about {
@@ -141,7 +144,7 @@ ul {
 .project_buttons {
     display: flex;
     margin-top: 60px;
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
 
 }
@@ -155,6 +158,8 @@ ul {
 
 .Buttons:hover {
     color: #bc0808;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
     
 }
 
@@ -185,7 +190,7 @@ a{
     color: rgb(255, 255, 255);
 }
 a :hover{
-    color: #000000;
-    
-    font-size: xxx-large;
+    color: beige;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
 }
