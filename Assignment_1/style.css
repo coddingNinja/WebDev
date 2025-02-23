@@ -23,7 +23,9 @@
     width: 260px;
     height: 100vh;
     position: fixed;
-    padding: 5px;
+    padding-top: 10px;
+
+
 
 }
 
@@ -33,7 +35,8 @@
     height: 250px;
     margin-left: 20px;
     border-width: 10px;
-    border-color: antiquewhite;
+    border-color: #e0e0e0;
+
 
 }
 
