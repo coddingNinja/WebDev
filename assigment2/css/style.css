@@ -4,6 +4,7 @@ body{
 
 
 
+
 }
 ul{
     list-style: none;
@@ -134,41 +135,58 @@ a{
 }
 .SALES_IMG_1{
     width: 100%;
+ 
 }
 .AppExclusive_img{
     width: 100%;
+   
+
 }
 
 .BestSeller_img{
     width: 100%;
+   
+
 }
 .SpringOccasionWear_img{
     width: 100%;
+   
+
+
 }
 .Collections_img{
     width: 100%;
+   
+
 }
 .ExploreMarketPlace_img{
     width: 100%;
+  
+
 }
 .Jewellery_img{
     width: 100%;
+    
+
 }
 .Shop_list_categories{
+    width: 100%;
     display: flex;
-    gap: 15px;
-    height: 600px;
-    padding-left: 2px;
-    padding-right: 2px;
+    gap: 10px;
+
+}
+.scroll-container::-webkit-scrollbar {
+    display: none;
 }
 .Shope_list{
-    width: 100%;
+    width: 250px; 
+    height: auto;
     flex-grow: 1;
 }
 .ExploreMarketPlace{
     position: relative;
     width: 100%;
-
+    height: auto;
 }
 .Shop_now_bt{
     position: absolute;
