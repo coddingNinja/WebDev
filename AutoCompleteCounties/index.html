@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+   <script src="/AutoCompleteCounties/sript.js"></script>
+</head>
+<style>
+    body{
+        font-family: Arial, sans-serif;
+    }
+    .Search-country{
+        width: 250px;
+       padding: 8px;
+       border: 1px solid #483535;
+       /* padding-right: 30px;  */
+    }
+    .Countainer{
+        position: relative;
+        width: 250px;
+    }
+    .autocomplete-list{
+        position: absolute;
+        background-color: white;
+        top: 100%;
+        width: 100%;
+        left: 0;
+        right: 0;
+        padding: 8px;
+        display: none;
+        max-height: 200px;
+        overflow-y: auto;
+        z-index: 1000;
+        border: 1px solid #ccc;
+    }
+    .Fetch-list-item{
+        padding: 8px;
+        
+
+
+
+    }
+</style>
+<body>
+    <div class="Countainer">
+        <input type="text" placeholder="Search  Country by Name" class="Search-country" id="Search-country">
+        <div id="autocomplete-list" class="autocomplete-list">
+           
+        </div>
+    </div>
+
+
+   
+</body>
+</html>
