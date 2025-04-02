@@ -40,13 +40,27 @@
 
     }
     .loder{
-        
+        position: absolute;
+            right: 10px;
+            top: 50%; 
+            width: 16px;
+            height: 16px;
+            border: 3px solid #ccc;
+            border-top-color: #0d0e0f;
+            border-radius: 50%;
+            animation: spin 0.7s linear infinite;
+            display: none;
+
     }
+    @keyframes spin {
+            from { transform: translateY(-50%) rotate(0deg); }
+            to { transform: translateY(-50%) rotate(360deg); }
+        }
 </style>
 <body>
     <div class="Countainer">
         <input type="text" placeholder="Search  Country by Name" class="Search-country" id="Search-country">
-        <div class="loder">
+        <div class="loder" id="Loder">
         </div>
         <div id="autocomplete-list" class="autocomplete-list">
            
