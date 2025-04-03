@@ -32,9 +32,6 @@ document.addEventListener("DOMContentLoaded", function () {
                         div.classList.add("Fetch-list-item");
                         div.textContent = element;
                         Counties.appendChild(div);
-
-
-
                     });
                     loder.style.display = "none";
                     Counties.style.display = "block";
@@ -49,6 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     document.addEventListener("click", function () {
         Counties.style.display = "none"
+        loder.style.display="none"
     })
     Counties.addEventListener("click",function(event){
         Input.value=event.target.textContent;
