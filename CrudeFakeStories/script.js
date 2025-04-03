@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             body: JSON.stringify({
                 title: title.value.trim(),
-                content: title.value.trim()
+                content: content.value.trim()
             })
         }).then(reposonse => reposonse.json()).then(data => {
             title.value = "";
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (data.length > 0) {
                 data.forEach(story => {
                     let div = document.createElement("div");
-                    div.classList.add("col-6", "mt-4", "each-card");
+                    div.classList.add("col-lg-6", "mt-4", "each-card");
                     div.id = story.id;
                     div.innerHTML = `
                 <div class="card card-body">
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     row.addEventListener("click", function (event) {
         if (event.target.classList.contains("Delete-button")) {
-            const storyCard = event.target.closest(".col-6");
+            const storyCard = event.target.closest(".each-card");
             console.log(storyCard.id);
             fetch(`${url}/${storyCard.id}`, { method: 'DELETE' }).then(response => {
                 if (!response.ok) {
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         }
         if (event.target.classList.contains("edit-button")) {
-            const storyCard = event.target.closest(".col-6");
+            const storyCard = event.target.closest(".col-lg-6");
             console.log(storyCard.id);
 
             title.value=storyCard.querySelector(".card-title").textContent;
@@ -116,4 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     });
+
+
+    
 })
