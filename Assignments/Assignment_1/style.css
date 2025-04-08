@@ -36,7 +36,7 @@
     width: 150px;
     height: 150px;
     margin-top: 20px;
-    border: 3px solid #000; /* Adjust the thickness and color as needed */
+    border: 3px solid #000; 
 }
 
 .name {
@@ -70,7 +70,7 @@
 }
 
 .main_about {
-    background-image: url('/Assignment_1/Assets/main_pic.jpeg');
+    background-image: url('/Assignments/Assignment_1/Assets/main_pic.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
