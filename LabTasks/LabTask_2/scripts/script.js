@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
         Error_conferm_password.textContent = "";
 
 
-        const invalidChars = /[#\s!]/;
+        const invalidChars = /[#\s!@]/;
         if (invalidChars.test(Name.value)) {
             flag = false;
             Error_username.textContent = "* Username cannot contain spaces or special characters (!, #, etc.)";
