@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const dropdownMenu = newCategory.querySelector('.Sales_dropdown_menu');
         dropdownMenu.innerHTML = `
-            <div class="slaes_dropdown_mennu_divs">
+            <div class="slaes_dropdown_mennu_divs new-dropdown">
                 <h3>Assignments Hub</h3>
                 <hr style="border: none; height: 1px; background-color: rgb(65, 64, 64); margin: 10px 0;">
                 <div class="container d-flex  gap-4">
@@ -34,12 +34,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
        
         dropdownMenu.style.display = 'none';
-
+        
+        anchor.addEventListener('mouseenter', () => {
+            dropdownMenu.style.display = 'none'; 
+        });
+        anchor.addEventListener('mouseleave', () => {
+            dropdownMenu.style.display = 'none'; 
+        });
        
         anchor.addEventListener('click', (e) => {
             e.preventDefault();
-            dropdownMenu.style.display = dropdownMenu.style.display === 'none' ? 'block' : 'none';
+
+           
+            if (dropdownMenu.style.display === 'block') {
+                dropdownMenu.style.display = 'none'; 
+            } else {
+                dropdownMenu.style.display = 'block'; 
+            }
         });
+
 
         const container = document.querySelector('.nav_categories');
         container.appendChild(newCategory);

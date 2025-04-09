@@ -325,4 +325,8 @@ a{
 .task{
 flex-grow: 1;
 width: 100px;
+height: 200px;
+}
+.new-dropdown:hover{
+display: none;
 }
