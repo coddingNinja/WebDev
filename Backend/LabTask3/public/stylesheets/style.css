@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+
+}
+
+.main_container {
+  flex-grow: 1;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-left: 260px;
+  height: 100vh;
+}
+
+.side-bar {
+  background-color: #060912;
+  width: 260px;
+  height: 100vh;
+  position: fixed;
+  padding-top: 10px;
+}
+
+.img-container{
+  display: flex;
+  justify-content: center;
+}
+
+.profile-pic {
+  border-radius:100%;
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+  border: 3px solid #000; 
+}
+
+.name {
+  color: rgb(239, 235, 235);
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.icons {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 4%;
+  margin-right: 20%;
+  gap: 10px;
+
+
+
+}
+
+.icons i {
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+
+}
+
+.icons :hover {
+
+  font-weight: bold;
+  font-size: xxx-large;
+  
+}
+
+.main_about {
+  background-image: url('/images/main_pic.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.main_page_text {
+  width: 600px;
+  margin-left: 20px;
+  font-size: 20px;
+  color: aliceblue;
+  padding-top: 40%;
+
+
+
+
+}
+
+section {
+  height: 100vh;
+
+}
+
+.About {
+  margin-top: 20px;
+  padding: 20px;
+  margin-left: 20px;
+  font-size: xx-large;
+
+}
+
+.div_1_in_about_section {
+  object-fit: cover;
+  padding: 2px;
+  height: 400px;
+  width: 400px;
+  display: flex;
+  margin: 20px;
+
+
+}
+
+
+.div_2_in_about_section {
+  height: 400px;
+  width: 400px;
+  flex-grow: 1;
+  padding: 0px;
+
+
+}
+
+.adout_container {
+  display: flex;
+  align-items: center;
+
+}
+
+.list_about {
+  font-size: large;
+  margin: 20px;
+
+}
+
+ul li ::before {
+  content: ">";
+}
+
+li {
+  font-size: larger;
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style: none;
+}
+
+.project_buttons {
+  display: flex;
+  margin-top: 60px;
+  gap: 30px;
+  justify-content: center;
+
+}
+
+.Buttons {
+  background: none;
+  border: none;
+  color: rgb(15, 16, 16);
+  font-size: x-large;
+}
+
+.Buttons:hover {
+  color: #bc0808;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  
+}
+
+.project_card {
+  height: 300px;
+  width: 300px;
+  align-items: center;
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ 
+
+}
+.project_card:hover{
+  font-size: xx-large;
+}
+.project_pic{
+width: 100%;
+height: 200px;
+}
+.projects_name_text{
+  font-size: larger;
+
+}
+a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+a :hover{
+  color: beige;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+}
