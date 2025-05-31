@@ -1,4 +1,2 @@
-Backend/LabTask3/node_modules/
-Backend/LabTask3/package-lock.json
-Backend/labTask4/karenmillen/node_modules/
-Backend/labTask4/karenmillen/package-lock.json
+**/node_modules/
+**/package-lock.json
